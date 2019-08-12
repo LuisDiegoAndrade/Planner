@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /**
-* Adon v1.0.0 (https://themeforest.net/user/sprukotechnologies)
-* Adon is a Bootstrap v4.1.3 Admin Template
-* Copyright 2018 Spruko Technologies Private Limited
-* Licensed under ThemeForest License
-*
 
 //---------- TABLE OF CONTENTS ----------//
 	*  General Elements
@@ -1509,7 +1504,7 @@ pre code {
 		display: -webkit-inline-box;
 	}
 	.page-header .btn{
-		display:block;		
+		display:block;
 	}
 }
 @media (max-width:1024px){
@@ -2092,14 +2087,14 @@ pre code {
 		justify-content:center !important;
 		margin-top: 13px !important;
 	}
-	
+
 }
 @media (max-width:560px){
 	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 		justify-content:end !important;
 		margin-top: 13px !important;
 	}
-	
+
 }
 
 /*--Form Controls---*/
@@ -2406,7 +2401,7 @@ textarea.form-control {
 		top:55px !important;
 	}
 	.navbar-sm-search{
-		
+
 	}
 }
 
@@ -5507,7 +5502,7 @@ button.close {
 .custom-switch-indicator.custom-switch-indicator-lg{
 	height: 1.5rem;
 	width: 3rem;
-}	
+}
 .custom-switch-indicator.custom-switch-indicator-lg:before {
 	content: '';
 	position: absolute;
@@ -9439,7 +9434,7 @@ article h5+figure {
  .chartsh{
 	width:100%;
 	height:300px !important;
-	
+
 }
 .chartjs-size-monitor{
 	height:300px;
@@ -9464,17 +9459,17 @@ article h5+figure {
 .socailicons  {
 	color:#fff;
 }
-.socailicons a { 
-	text-decoration:none; 
+.socailicons a {
+	text-decoration:none;
 }
 .twitter1 {
 	background-color:#00acee !important;
 }
- .google-plus1 { 
+ .google-plus1 {
 	background-color:#ff471d !important;
 }
  .facebook-like1 {
-	background-color:#011fbf !important; 
+	background-color:#011fbf !important;
 }
 .pinterest1 {
 	background-color:#bd081c !important;
@@ -9526,7 +9521,7 @@ tspan.highcharts-text-outline{
 	.stats:nth-child(4){
 		border-left:0;
 	}
-	
+
 }
 
 @media (max-width:993px) and (min-width:600px){
@@ -9555,7 +9550,7 @@ tspan.highcharts-text-outline{
 	.stats:first-child{
 		border-top:0;
 	}
-	
+
 }
 @media (max-width:1024px){
 	.worldmap{
@@ -9681,7 +9676,7 @@ tspan.highcharts-text-outline{
 		font-weight: 600;
 		font-size: 1rem;
 	}
-	
+
 	.hr-charts h2{
 		font-size: 1rem;
 	}
@@ -9744,11 +9739,11 @@ tspan.highcharts-text-outline{
 	#notfound {
 		margin: 0 15px;
 	}
-	
+
 }
 @media (min-width:768px) and (max-width:992px){
 	.finance-content h3{
-		font-size: 0.92rem;	
+		font-size: 0.92rem;
 	}
 	.chart-circle-value .text-xxl{
 		font-size: 1.5rem !important;
@@ -9831,7 +9826,7 @@ img.profile-photo-lg {
 	border-radius: 50%;
 }
 .cover-image{
-	background-size: cover !important;	
+	background-size: cover !important;
 }
 .profile-image img{
 	width:100%;
@@ -10228,7 +10223,7 @@ img.profile-photo-lg {
 }
 .mail_list .list-group-item:last-child {
 	 border-bottom: 0;
-	
+
 }
 .mail_list .media-heading a{
 	font-size:16px;
@@ -10676,7 +10671,7 @@ img.profile-photo-lg {
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
     color: #;
 }
-#generic_price_table .generic_content .generic_feature_list ul li{  
+#generic_price_table .generic_content .generic_feature_list ul li{
     color:#;
 }
 #generic_price_table .generic_content .generic_feature_list ul li span{
@@ -10686,9 +10681,9 @@ img.profile-photo-lg {
     background-color: rgb(255, 255, 255,0.1);
 }
 #generic_price_table .generic_content .generic_price_btn a{
-    border: 1px solid #ad59ff; 
+    border: 1px solid #ad59ff;
     color: #ad59ff;
-} 
+}
 #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
     border-color: #ad59ff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ad59ff;
@@ -10702,7 +10697,7 @@ img.profile-photo-lg {
 #generic_price_table .generic_content.active .generic_price_btn a{
     background-color: #ad59ff;
     color: #fff;
-} 
+}
 
 
 /*PRICE BODY CODE START*/
@@ -10821,19 +10816,19 @@ img.profile-photo-lg {
     -ms-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
-} 
-@media (max-width: 320px) { 
+}
+@media (max-width: 320px) {
      .snip1492 i {
 		top: 38% !important;
 		left: 90% !important;
 	}
 }
-@media (max-width: 568px) { 
+@media (max-width: 568px) {
 	#example1 .form-control{
 		width:200px;
 	}
 }
-@media (max-width: 375px) { 
+@media (max-width: 375px) {
      .snip1492 i {
 		top: 44% !important;
 		left: 91% !important;
@@ -10845,13 +10840,13 @@ img.profile-photo-lg {
         float:left;
         width:50%;
     }
-    
+
     #generic_price_table .col-md-4{
         float:left;
         width:50%;
     }
-    
-    
+
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 }
@@ -11261,7 +11256,7 @@ img.profile-photo-lg {
 	margin: 0;
 	vertical-align: middle;
 }
-  
+
 /*----Accordion----*/
 
  .accordion {
@@ -11290,7 +11285,7 @@ img.profile-photo-lg {
 
 .accordion .accordion-body {
 	line-height: 24px;
-} 
+}
 .accordion1 .panel-title{
 	padding: 10px;
 	background: #ad59ff;
@@ -11422,7 +11417,7 @@ img.profile-photo-lg {
 	}
 }
 @media (max-width:560px){
-	
+
 	.navtab-wizard.nav-tabs li{
 		width: 100%;
 		display: contents;
