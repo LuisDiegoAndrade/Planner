@@ -59,8 +59,8 @@ async function setCalendarEvent(eventObj, calendar) {
    console.log(eventObj);
     calendar.addEvent({
       title: eventObj.title,
-      start: eventObj.start
-
+      start: eventObj.start,
+      allDay: false
     });
 }
 
