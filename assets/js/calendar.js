@@ -132,5 +132,4 @@ function publishCalendar() {
   calendarLinkTextArea.innerText = URI;
   let clipboardData = document.getElementById('clipboardData');
   clipboardData.setAttribute('data-clipboard-text', URI);
-
 }
