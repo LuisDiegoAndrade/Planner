@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="Your time is important, manage it better!" name="description">
+	<meta content="E-Planner" name="Young Lord">
+
+	<!-- Title -->
+	<title>Planner</title>
+
+	<!-- Favicon -->
+	<link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+	<!-- Icons -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+	<!--Bootstrap.min css-->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+	<!-- Adon CSS -->
+	<link href="assets/css/dashboard.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom scroll bar css-->
+	<link href="assets/plugins/customscroll/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+	<!--Fullcalendar css-->
+	<link href='assets/plugins/fullcalendar/fullcalendar.css' rel='stylesheet' />
+	<link href='assets/plugins/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
+	<!-- Sidemenu Css -->
+	<link href="assets/plugins/toggle-sidebar/css/sidemenu.css" rel="stylesheet">
+
+</head>
+<body class="app sidebar-mini rtl" style="font-family: 'Karla', sans-serif;" >
+	<div id="global-loader" ></div>
+	<div class="page">
+		<div class="page-main">
+			<!-- Sidebar menu-->
+			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+			<aside class="app-sidebar ">
+				<div class="sidebar-img">
+					<a class="navbar-brand" href="index.html"><img alt="..." class="navbar-brand-img main-logo" src="assets/img/brand/logo.png"> <img alt="..." class="navbar-brand-img logo" src="assets/img/brand/logo.png"></a>
+					<ul class="side-menu">
+						<li>
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Home</span></a>
+						</li>
+
+
+
+
+
+
+
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-email"></i><span class="side-menu__label">Email</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="maps.html" class="slide-item">Email calendar</a>
+								</li>
+								<li>
+									<a href="vector-map.html" class="slide-item">Email list planner</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-file-text"></i><span class="side-menu__label">Print</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="tables.html" class="slide-item">Print calendar</a>
+								</li>
+								<li>
+									<a href="datatable.html" class="slide-item">Print list planner</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Share</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="login.html" class="slide-item">Publish my calendar</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="side-menu__item" href="#"><i class="side-menu__icon fa fa-question-circle"></i><span class="side-menu__label">Help & Support</span></a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<!-- Sidebar menu-->
+
+			<!-- app-content-->
+			<div class="app-content ">
+				<div class="side-app">
+					<div class="main-content">
+						<div class="p-2 d-block d-sm-none navbar-sm-search">
+							<!-- Form -->
+							<form class="navbar-search navbar-search-dark form-inline ml-lg-auto">
+								<div class="form-group mb-0">
+									<div class="input-group input-group-alternative">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="fas fa-search"></i></span>
+										</div><input class="form-control" placeholder="Search" type="text">
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- Top navbar -->
+						<nav class="navbar navbar-top  navbar-expand-md navbar-dark" id="navbar-main">
+							<div class="container-fluid">
+								<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+
+								<!-- Horizontal Navbar -->
+								<ul class="navbar-nav align-items-center d-none d-xl-block">
+									<li class="nav-item dropdown">
+									<a aria-expanded="false" aria-haspopup="true" class="nav-link pr-md-0 mr-md-2 pl-1 d-lg-block" data-toggle="dropdown" href="#" role="button">
+										Help
+									</a>
+									</li>
+								</ul>
+
+								<!-- Brand -->
+								<a class="navbar-brand pt-0 d-md-none" href="index.html">
+									<img src="assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+								</a>
+								<!-- Form -->
+								<form class="navbar-search navbar-search-dark form-inline ml-3  mr-lg-auto">
+									<div class="form-group mb-0">
+										<div class="input-group input-group-alternative">
+											<div class="input-group-prepend">
+												<span class="input-group-text"><i class="fas fa-search"></i></span>
+											</div><input class="form-control" placeholder="Search" type="text">
+										</div>
+									</div>
+								</form>
+								<!-- User -->
+								<!-- User -->
+								<ul class="navbar-nav align-items-center ">
+									<li class="nav-item dropdown">
+										<a aria-expanded="false" aria-haspopup="true" class="nav-link pr-md-0 mr-md-2 pl-1" data-toggle="dropdown" href="#" role="button">
+											<div class="media align-items-center">
+												<span class="avatar avatar-sm rounded-circle"><img alt="Image placeholder" src="assets/img/faces/female/27.jpg"></span>
+
+											</div>
+										</a>
+										<div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+											<div class=" dropdown-header noti-title text-center border-bottom pb-3">
+													<h3 class="text-capitalize text-dark mb-1">Elsy</h3>
+												<h6 class="text-overflow m-0">Cutie</h6>
+											</div>
+											<a class="dropdown-item" href="user-profile.html"><i class="ni ni-single-02"></i> <span>My Calendar</span></a>
+											<a class="dropdown-item" href="#"><i class="ni ni-settings-gear-65"></i> <span>Settings</span></a>
+											<a class="dropdown-item" href="#"><i class=" ni ni-email-83"></i> <span>Share</span></a>
+											<a class="dropdown-item" href="#"><i class=" ni ni-single-02"></i> <span>Friends Calendars</span></a>
+											<a class="dropdown-item" href="#"><i class="ni ni-support-16"></i> <span>Support</span></a>
+											<div class="dropdown-divider"></div><a class="dropdown-item" href="login.html"><i class="ni ni-user-run"></i> <span>Leave</span></a>
+										</div>
+									</li>
+									<li class="nav-item dropdown d-none d-md-flex">
+										<a aria-expanded="false" aria-haspopup="true" title="languages" class="nav-link pr-0" data-toggle="dropdown" href="#" role="button">
+										<div class="media align-items-center">
+											<i class="fe fe-flag f-30 "></i>
+										</div></a>
+										<div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow dropdown-menu-right"><a href="#" class="dropdown-item d-flex align-items-center">
+												<img src="assets/img/flag-img/french_flag.jpg" alt="flag-img" class="avatar avatar-sm mr-3 align-self-center">
+												<div>
+													<strong>French</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex align-items-center">
+												<img src="assets/img/flag-img/germany_flag.jpg" alt="flag-img" class="avatar avatar-sm mr-3 align-self-center">
+												<div>
+													<strong>Germany</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex align-items-center">
+												<img src="assets/img/flag-img/italy_flag.jpg" alt="flag-img" class="avatar avatar-sm  mr-3 align-self-center">
+												<div>
+													<strong>Italy</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex align-items-center">
+												<img src="assets/img/flag-img/russia_flag.jpg" alt="flag-img" class="avatar avatar-sm mr-3 align-self-center">
+												<div>
+													<strong>Russia</strong>
+												</div>
+											</a>
+											<a href="#" class="dropdown-item d-flex align-items-center">
+												<img src="assets/img/flag-img/spain_flag.jpg" alt="flag-img" class="avatar avatar-sm mr-3 align-self-center">
+												<div>
+													<strong>Spain</strong>
+												</div>
+											</a>
+										</div>
+									</li>
+
+									<li class="nav-item d-none d-md-flex">
+										<div class="dropdown d-none d-md-flex mt-2 ">
+											<a class="nav-link full-screen-link  pr-0"><i class="fe fe-maximize-2 floating " id="fullscreen-button"></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<!-- Top navbar-->
+
+						<!-- Page content -->
+
+
+						<!-- /////////////////////| ***Main Calendar HTML*** |\\\\\\\\\\\\\\\\\\\\\\\ -->
+						<div class="container-fluid pt-8">
+							<div class="page-header mt-0  p-3">
+								<h3 class="mb-sm-0">Home</h3>
+								<ol class="breadcrumb mb-0">
+									<li class="breadcrumb-item"><a href="#"><i class="fe fe-home"></i></a></li>
+									<li class="breadcrumb-item active" aria-current="page">Home</li>
+								</ol>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card">
+
+										<div class="card-body">
+											 <div id='mainCalendar'></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card">
+
+										<div class="card-body">
+											 <button type="button" class="mt-2 btn btn-block btn-primary mt-1 mb-1" onclick="newCalendar();">Delete ALL Events</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<!--Modual for making an event-->
+							<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-body p-0">
+											<div class="card bg-primary shadow border-0 mb-0">
+
+												<div class="card-body px-lg-5 py-lg-5">
+													<div class="text-center text-white mb-4 h2">
+														<i class="icon-plus"></i>
+													</div>
+													<form>
+														<div class="form-group mb-3">
+															<div class="input-group input-group-alternative">
+																<div class="input-group-prepend">
+																	<span class="input-group-text"><i class="icon-event"></i></span>
+																</div>
+																<select id="daySelection" name="day" class="form-control custom-select">
+																	<option value="">Day</option>
+																	<option value="01">01</option>
+																	<option value="02">02</option>
+																	<option value="03">03</option>
+																	<option value="04">04</option>
+																	<option value="05">05</option>
+																	<option value="06">06</option>
+																	<option value="07">07</option>
+																	<option value="08">08</option>
+																	<option value="09">09</option>
+																	<option value="10">10</option>
+																	<option value="11">11</option>
+																	<option value="12">12</option>
+																	<option value="13">13</option>
+																	<option value="14">14</option>
+																	<option value="15">15</option>
+																	<option value="16">16</option>
+																	<option value="17">17</option>
+																	<option value="18">18</option>
+																	<option value="19">19</option>
+																	<option value="20">20</option>
+																	<option value="21">21</option>
+																	<option value="22">22</option>
+																	<option value="23">23</option>
+																	<option value="24">24</option>
+																	<option value="25">25</option>
+																	<option value="26">26</option>
+																	<option value="27">27</option>
+																	<option value="28">28</option>
+																	<option value="29">29</option>
+																	<option value="30">30</option>
+																	<option value="31">31</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group mb-3">
+															<div class="input-group input-group-alternative">
+																<div class="input-group-prepend">
+																	<span class="input-group-text"><i class="ti-arrow-circle-left"></i></span>
+																</div>
+																<select id="timeSelection" name="time" class="form-control custom-select">
+																	<option value="">time</option>
+																	<option value="01">01</option>
+																	<option value="02">02</option>
+																	<option value="03">03</option>
+																	<option value="04">04</option>
+																	<option value="05">05</option>
+																	<option value="06">06</option>
+																	<option value="07">07</option>
+																	<option value="08">08</option>
+																	<option value="09">09</option>
+																	<option value="10">10</option>
+																	<option value="11">11</option>
+																	<option value="12">12</option>
+																	<option value="13">13</option>
+																	<option value="14">14</option>
+																	<option value="15">15</option>
+																	<option value="16">16</option>
+																	<option value="17">17</option>
+																	<option value="18">18</option>
+																	<option value="19">19</option>
+																	<option value="20">20</option>
+																	<option value="21">21</option>
+																	<option value="22">22</option>
+																	<option value="23">23</option>
+																	<option value="24">24</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group mb-3">
+															<div class="input-group input-group-alternative">
+																<div class="input-group-prepend">
+																	<span class="input-group-text"><i class="ti-comment-alt"></i></span>
+																</div>
+																<input id="eventTitle" type="text" class="form-control" name="eventTitle" placeholder="Title">
+															</div>
+														</div>
+
+														<div class="text-center">
+															<button type="button" onclick="modalForm();" data-dismiss="modal" class="btn btn-white my-4"><i class="ti-pin"></i></button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- Footer -->
+							<footer class="footer">
+								<div class="row align-items-center justify-content-xl-between">
+									<div class="col-xl-6">
+										<div class="copyright text-center text-xl-left text-muted">
+											<p class="text-sm font-weight-500">Copyright 2019 © All Rights Reserved. <a href="#">Planner</a></p>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<p class="float-right text-sm font-weight-500"><a style="font-size: 28px;" href=""><i class="ion-social-github"></i> </a><a style="font-size: 28px;" href=""><i class="ion-social-instagram"></i> </a><a style="font-size:28px;" href=""><i class="ion-social-facebook-outline"></i> </a> </p>
+									</div>
+								</div>
+							</footer>
+							<!-- Footer -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- app-content -->
+		</div>
+	</div>
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+	<!-- Adon Scripts -->
+
+	<!-- Core -->
+	<script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Fullside-menu Js-->
+	<script src="assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+	<!--Fullcalendar js-->
+	<link href='https://unpkg.com/@fullcalendar/core@4.3.0/main.min.css' rel='stylesheet' />
+  <link href='https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.css' rel='stylesheet' />
+  <link href='https://unpkg.com/@fullcalendar/list@4.3.0/main.min.css' rel='stylesheet' />
+
+	<script src='https://unpkg.com/@fullcalendar/core@4.3.0/main.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/list@4.3.0/main.min.js'></script>
+	<!--CALENDAR JS -->
+	<script src="assets/js/calendar.js"></script>
+
+
+	<!-- Custom scroll bar Js-->
+	<script src="assets/plugins/customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Adon JS -->
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>
