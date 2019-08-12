@@ -55,37 +55,10 @@
 
 
 
-						<li class="slide">
-							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-email"></i><span class="side-menu__label">Email</span><i class="angle fa fa-angle-right"></i></a>
-							<ul class="slide-menu">
-								<li>
-									<a href="maps.html" class="slide-item">Email calendar</a>
-								</li>
-								<li>
-									<a href="vector-map.html" class="slide-item">Email list planner</a>
-								</li>
-							</ul>
-						</li>
-						<li class="slide">
-							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-file-text"></i><span class="side-menu__label">Print</span><i class="angle fa fa-angle-right"></i></a>
-							<ul class="slide-menu">
-								<li>
-									<a href="tables.html" class="slide-item">Print calendar</a>
-								</li>
-								<li>
-									<a href="datatable.html" class="slide-item">Print list planner</a>
-								</li>
-							</ul>
-						</li>
 
-						<li class="slide">
-							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Share</span><i class="angle fa fa-angle-right"></i></a>
-							<ul class="slide-menu">
-								<li>
-									<a href="login.html" class="slide-item">Publish my calendar</a>
-								</li>
-							</ul>
-						</li>
+						<li class="slide"><a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fe fe-file-text"></i><span class="side-menu__label">Print</span></a></li>
+
+
 
 						<li>
 							<a class="side-menu__item" href="#"><i class="side-menu__icon fa fa-question-circle"></i><span class="side-menu__label">Help & Support</span></a>
@@ -143,25 +116,7 @@
 								<!-- User -->
 								<ul class="navbar-nav align-items-center ">
 									<li class="nav-item dropdown">
-										<a aria-expanded="false" aria-haspopup="true" class="nav-link pr-md-0 mr-md-2 pl-1" data-toggle="dropdown" href="#" role="button">
-											<div class="media align-items-center">
-												<span class="avatar avatar-sm rounded-circle"><img alt="Image placeholder" src="assets/img/27.jpg"></span>
 
-											</div>
-										</a>
-										<div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-											<div class=" dropdown-header noti-title text-center border-bottom pb-3">
-													<h3 class="text-capitalize text-dark mb-1">Elsy</h3>
-												<h6 class="text-overflow m-0">Cutie</h6>
-											</div>
-											<a class="dropdown-item" href="user-profile.html"><i class="ni ni-single-02"></i> <span>My Calendar</span></a>
-											<a class="dropdown-item" href="#"><i class="ni ni-settings-gear-65"></i> <span>Settings</span></a>
-											<a class="dropdown-item" href="#"><i class=" ni ni-email-83"></i> <span>Share</span></a>
-											<a class="dropdown-item" href="#"><i class=" ni ni-single-02"></i> <span>Friends Calendars</span></a>
-											<a class="dropdown-item" href="#"><i class="ni ni-support-16"></i> <span>Support</span></a>
-											<div class="dropdown-divider"></div><a class="dropdown-item" href="login.html"><i class="ni ni-user-run"></i> <span>Leave</span></a>
-										</div>
-									</li>
 									<li class="nav-item dropdown d-none d-md-flex">
 										<a aria-expanded="false" aria-haspopup="true" title="languages" class="nav-link pr-0" data-toggle="dropdown" href="#" role="button">
 										<div class="media align-items-center">
@@ -216,10 +171,10 @@
 						<!-- /////////////////////| ***Main Calendar HTML*** |\\\\\\\\\\\\\\\\\\\\\\\ -->
 						<div class="container-fluid pt-8">
 							<div class="page-header mt-0  p-3">
-								<h3 class="mb-sm-0">Home</h3>
+								<h3 class="mb-sm-0">Shared Planner</h3>
 								<ol class="breadcrumb mb-0">
-									<li class="breadcrumb-item"><a href="#"><i class="fe fe-home"></i></a></li>
-									<li class="breadcrumb-item active" aria-current="page">Home</li>
+									<li class="breadcrumb-item"><a href="#"><i class="fas fa-hand-holding-heart"></i></a></li>
+									<li class="breadcrumb-item active" aria-current="page">Shared Calendar</li>
 								</ol>
 							</div>
 							<div class="row">
@@ -227,41 +182,7 @@
 									<div class="card">
 
 										<div class="card-body">
-											 <div id='mainCalendar'></div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-12">
-									<div class="card">
-
-										<div class="card-body">
-											 <button type="button" class="mt-2 btn btn-block btn-primary mt-1 mb-1" onclick="newCalendar();">Delete ALL Events</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-12">
-									<div class="card">
-
-										<div class="card-body">
-											<div class="col-md-12">
-												<button class="btn btn-icon btn-success mt-1 mb-1" type="button" onclick="publishCalendar();">
-													<span class="btn-inner--icon"><i class="fe fe-globe"></i></span>
-													<span class="btn-inner--text">Press to publish your Calendar!</span>
-												</button>
-											<div id="clipboardData" class="btn-icon-clipboard" data-clipboard-text="" title="Copy to clipboard" >
-												<div>
-													<span id="sharedCalendarLink"></span>
-												</div>
-											</div>
-										</div>
-
-
+											 <div id='calendar'></div>
 										</div>
 									</div>
 								</div>
@@ -270,112 +191,9 @@
 
 
 
-							<!--Modual for making an event-->
-							<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-								<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
-									<div class="modal-content">
-										<div class="modal-body p-0">
-											<div class="card bg-primary shadow border-0 mb-0">
 
-												<div class="card-body px-lg-5 py-lg-5">
-													<div class="text-center text-white mb-4 h2">
-														<i class="icon-plus"></i>
-													</div>
-													<form>
-														<div class="form-group mb-3">
-															<div class="input-group input-group-alternative">
-																<div class="input-group-prepend">
-																	<span class="input-group-text"><i class="icon-event"></i></span>
-																</div>
-																<select id="daySelection" name="day" class="form-control custom-select">
-																	<option value="">Day</option>
-																	<option value="01">01</option>
-																	<option value="02">02</option>
-																	<option value="03">03</option>
-																	<option value="04">04</option>
-																	<option value="05">05</option>
-																	<option value="06">06</option>
-																	<option value="07">07</option>
-																	<option value="08">08</option>
-																	<option value="09">09</option>
-																	<option value="10">10</option>
-																	<option value="11">11</option>
-																	<option value="12">12</option>
-																	<option value="13">13</option>
-																	<option value="14">14</option>
-																	<option value="15">15</option>
-																	<option value="16">16</option>
-																	<option value="17">17</option>
-																	<option value="18">18</option>
-																	<option value="19">19</option>
-																	<option value="20">20</option>
-																	<option value="21">21</option>
-																	<option value="22">22</option>
-																	<option value="23">23</option>
-																	<option value="24">24</option>
-																	<option value="25">25</option>
-																	<option value="26">26</option>
-																	<option value="27">27</option>
-																	<option value="28">28</option>
-																	<option value="29">29</option>
-																	<option value="30">30</option>
-																	<option value="31">31</option>
-																</select>
-															</div>
-														</div>
-														<div class="form-group mb-3">
-															<div class="input-group input-group-alternative">
-																<div class="input-group-prepend">
-																	<span class="input-group-text"><i class="ti-arrow-circle-left"></i></span>
-																</div>
-																<select id="timeSelection" name="time" class="form-control custom-select">
-																	<option value="">time</option>
-																	<option value="01">01</option>
-																	<option value="02">02</option>
-																	<option value="03">03</option>
-																	<option value="04">04</option>
-																	<option value="05">05</option>
-																	<option value="06">06</option>
-																	<option value="07">07</option>
-																	<option value="08">08</option>
-																	<option value="09">09</option>
-																	<option value="10">10</option>
-																	<option value="11">11</option>
-																	<option value="12">12</option>
-																	<option value="13">13</option>
-																	<option value="14">14</option>
-																	<option value="15">15</option>
-																	<option value="16">16</option>
-																	<option value="17">17</option>
-																	<option value="18">18</option>
-																	<option value="19">19</option>
-																	<option value="20">20</option>
-																	<option value="21">21</option>
-																	<option value="22">22</option>
-																	<option value="23">23</option>
-																	<option value="24">24</option>
-																</select>
-															</div>
-														</div>
-														<div class="form-group mb-3">
-															<div class="input-group input-group-alternative">
-																<div class="input-group-prepend">
-																	<span class="input-group-text"><i class="ti-comment-alt"></i></span>
-																</div>
-																<input id="eventTitle" type="text" class="form-control" name="eventTitle" placeholder="Title">
-															</div>
-														</div>
 
-														<div class="text-center">
-															<button type="button" onclick="modalForm();" data-dismiss="modal" class="btn btn-white my-4"><i class="ti-pin"></i></button>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+
 
 
 							<!-- Footer -->
@@ -421,10 +239,11 @@
   <script src='https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.js'></script>
   <script src='https://unpkg.com/@fullcalendar/list@4.3.0/main.min.js'></script>
 	<!--CALENDAR JS -->
-	<script src="assets/js/calendar.js"></script>
+	<script src="assets/js/sharecalendar.js"></script>
 
 	<!-- Clipboard helper JS -->
 	<script src="assets/plugins/clipboard/dist/clipboard.min.js"></script>
+
 
 	<!-- Custom scroll bar Js-->
 	<script src="assets/plugins/customscroll/jquery.mCustomScrollbar.concat.min.js"></script>

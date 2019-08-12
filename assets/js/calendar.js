@@ -123,3 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
   _calendar = calendar;
 
 });
+
+function publishCalendar() {
+  let calendarParam = encodeURIComponent(localStorage.getItem('events'));
+  let htmlDoc = 'https://luisdiegoandrade.github.io/Planner/myplanner';
+  let URI = htmlDoc + '?' + calendarParam;
+  let calendarLinkTextArea = document.getElementById('sharedCalendarLink');
+  calendarLinkTextArea.innerText = URI;
+  let clipboardData = document.getElementById('clipboardData');
+  clipboardData.setAttribute('data-clipboard-text', URI);
+
+}
